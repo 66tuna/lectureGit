@@ -19,29 +19,41 @@
 
         nav {
             height: 100%;
-            padding: 10px;
+            padding: 20px;
             background-color: #eee;
         }
 
-        section {
-            width: 100%;
-            background-color: red;
-            content: "";
-            clear: both;
-            display: table;
-            display: flex;
-            flex-direction: column;
+        body{
+            margin: 0;
         }
 
-        section .content{
+        section {
+            /* padding: 10px 0; */
+            background-color: coral;
             display: flex;
+            flex-direction: column;
+            height: 200px;
         }
 
         section p {
             width: 33.33%;
             padding: 10px;
             margin: 0;
-            height: 200px;
+            height: 100%;
+        }
+
+        section .content{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .side {
+            flex: 1;
+        }
+
+        .center {
+            flex: 2;
         }
 
         @media (max-width:600px) {
@@ -70,9 +82,9 @@
     <section>
         <h3>content</h3>
         <div class="content">
-            <p style="background-color: #ffbcd1;">내용1</p>
-            <p style="background-color: gray;">내용2</p>
-            <p style="background-color: #ffbcd1;">내용3</p>
+            <p style="background-color: #ffbcd1;" class="side">내용1</p>
+            <p style="background-color: gray;" class="center">내용2</p>
+            <p style="background-color: #ffbcd1;" class="side">내용3</p>
         </div>
     </section>
 
