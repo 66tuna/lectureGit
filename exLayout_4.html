@@ -7,45 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
 
-        header{
+        header {
             padding: 10px;
             height: 100%;
             background-color: aqua;
         }
 
-        nav{
+        nav {
             height: 100%;
-            padding: 20px;
+            padding: 10px;
             background-color: #eee;
         }
 
-        section{
+        section {
             width: 100%;
             background-color: red;
             content: "";
             clear: both;
             display: table;
+            display: flex;
+            flex-direction: column;
         }
 
-        section p{
-            float: left;
+        section .content{
+            display: flex;
+        }
+
+        section p {
             width: 33.33%;
             padding: 10px;
             margin: 0;
             height: 200px;
         }
 
-        @media (max-width:600px){
-            section p{
+        @media (max-width:600px) {
+            section p {
                 width: 100%;
             }
         }
 
-        footer{
+        footer {
             height: 100%;
             padding: 10px;
             background-color: #660099;
@@ -55,7 +60,7 @@
 
 <body>
     <header>
-        <h1>북합 5단 레이아웃 float[1:1:1]</h1>
+        <h1>북합 5단 레이아웃 flex[1:1:1]</h1>
     </header>
 
     <nav>
@@ -64,9 +69,11 @@
 
     <section>
         <h3>content</h3>
-        <p style="background-color: #ffbcd1;">내용1</p>
-        <p style="background-color: gray;">내용2</p>
-        <p style="background-color: #ffbcd1;">내용3</p>
+        <div class="content">
+            <p style="background-color: #ffbcd1;">내용1</p>
+            <p style="background-color: gray;">내용2</p>
+            <p style="background-color: #ffbcd1;">내용3</p>
+        </div>
     </section>
 
     <footer>
