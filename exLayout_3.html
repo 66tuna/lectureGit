@@ -34,7 +34,15 @@
         section p{
             float: left;
             width: 33.33%;
-            padding: 50px;
+            padding: 10px;
+            margin: 0;
+            height: 200px;
+        }
+
+        @media (max-width:600px){
+            section p{
+                width: 100%;
+            }
         }
 
         footer{
@@ -57,7 +65,7 @@
     <section>
         <h3>content</h3>
         <p style="background-color: #ffbcd1;">내용1</p>
-        <p style="background-color: #660099;">내용2</p>
+        <p style="background-color: gray;">내용2</p>
         <p style="background-color: #ffbcd1;">내용3</p>
     </section>
 
