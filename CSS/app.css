@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+
+.flex-col-between{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    width: 20vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+nav ul{
+    height: 40%;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+nav ul li a{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+#content{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffbcd1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .btn{
+    width: 80px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+}
+
+section .btn:hover{
+    background-color: #b19cd9;
+}
+
+section .btn a{
+    font-size: 18px;
+    color: #000;
+}
+
+section .bir{
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+section .bir img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+section .bir h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    font-size: 40px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
